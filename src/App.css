@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+  overflow: auto;
+}
+
+
+section {
+  width: 80%;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+#table-wrapper{
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+#country-table {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-top: 2px solid black;
+  text-align: left;
+  table-layout: fixed;
+}
+thead{
+  position:sticky;
+  inset-block-start: 0;
+  background-color: white;
+}
+
+th {
+  cursor:pointer;
+}
+
+td {
+  padding-left: 5px;
+}
+.continent-selector {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:0;
+}
+
+.continent-selector li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+h4{
+  margin: 0;
+}
+
+.page-wrapper{
+  margin: 20px 0 80px 0;
+}
+
+.results-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page-wrapper div p{
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+.page-nav{
+  display: grid;
+  grid-template:
+     "prev text next" 20px 
+    / 30px 110px 30px;
+  margin:0 auto;
+  width: 170px;
+  margin-bottom: 20px;
+}
+
+.page-nav div {
+  grid-area: text;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#next-page, #prev-page {
+  border: none;
+  background: none;
+}
+
+#prev-page{
+  grid-area: prev;
+}
+
+#next-page{
+  grid-area: next;
+}
+
+button{
+  cursor:pointer;
+}
+
+.dropdown-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-list {
+  padding: 0;
+  margin: 0;
+  background-color: #EFEFEF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+.dropdown-list li {
+  list-style: none;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  cursor:pointer;
+
+}
+
+.dropdown-list li:last-of-type {
+  margin-bottom: 5px;
+}
